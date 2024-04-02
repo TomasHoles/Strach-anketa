@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Home-page</title>
+</head>
+<body>
+    <header>
+        <h1>Anketa o strachu</h1>
+    </header>
+    <main>
+        
+        <form action="/submit" method="post">
+            <div>
+            <label class="lol" for="author">Jméno a příjmení:</label>
+            <input type="text" id="author" name="author" required><br>
+        </div>
+            
+            <br>
+        <div class="lol">
+            <label>Vyberte z čeho máte největší strach:</label>
+            <select id="strach" name="strach">
+                <option value="vysek">Z výšek</option>
+                <option value="pavouku">Z pavouků</option>
+                <option value="letani">Z letani</option>
+                <option value="spatnehovysvedceni">Z špatného vysvědčení</option>
+                <option value="klaustrfobie">Z těsněných prostorů</option>
+                <option value="oceanu">Z Oceánu</option>
+                
+            </select>
+        </div>
+        <br><br>
+            <div>
+                <label class="lol" for="importance">Jak hodně se bojíte tohoto strachu? </label>
+                <input type="range" id="importance" name="importance" min="0" max="10" step="1" list="markers">
+                <datalist id="markers">
+                    <div>
+                    <option value="0" label="0"></option>
+                    <option value="1" label="1"></option>
+                    <option value="2" label="2"></option>
+                    <option value="3" label="3"></option>
+                    <option value="4" label="4"></option>
+                    <option value="5" label="5"></option>
+                    <option value="6" label="6"></option>
+                    <option value="7" label="7"></option>
+                    <option value="8" label="8"></option>
+                    <option value="9" label="9"></option>
+                    <option value="10" label="10"></option>
+                </div>
+                </datalist>
+            </div>
+            <br><br>
+        <label class="lol" for="message">Máte jiný největší strach napište ho sem:</label><br>
+            <textarea id="message" name="message" required></textarea>
+            <br> <br>
+            <br> <br>
+        <button type="submit" value="Odeslat">Odeslat</button>
+            <br> <br>
+    </main>
+    <footer>
+        <hr>
+        <p class="center">Copyright 2024 - IT2</p>
+    </footer>
+</body>
+</html>
