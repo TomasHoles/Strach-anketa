@@ -1,0 +1,1 @@
+# Strach-anketa
